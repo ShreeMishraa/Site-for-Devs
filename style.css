@@ -1,0 +1,214 @@
+/* DEFAULT*/
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* NAV BAR*/
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4e4d4d;
+}
+
+nav .topnav-left li {
+    list-style-type: none;
+    float: left;
+}
+
+nav .topnav-left li.topnav-right {
+    list-style-type: none;
+    float: right;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+ul li a:hover {
+    background-color: #111;
+}
+
+/* Custom Styles */
+#section-1-gradient {
+    background-image: linear-gradient(to bottom right, rgb(50, 155, 62), rgb(25, 78, 43));
+}
+div .box{
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.10);
+    margin: 24px;
+    text-align: center;
+    padding: 36px 24px 40px, 24px;
+}
+div .box p{
+    font-size: 180%;
+}
+label{
+    font-size: 250%;
+    font-weight: bolder;
+}
+h1.large {
+    font-size: 60px;
+    color: white;
+    margin: 0%;
+}
+form h2{
+    color: white;
+
+}
+input[type=text], input[type=password] {
+    font-size: 120%;
+    width: 50%;
+    padding: 10px;
+
+}
+.margin-left {
+    margin-left: 10%;
+}
+.buttons{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: -2%;
+
+}
+div button{
+    margin-top: 2%;
+    padding: 10px;
+    font-size: medium;
+    background-color:rgb(211, 209, 209);
+    border-radius: 30%;
+}
+.button-2{
+    margin-left: 22%;
+    width: 15%;
+}
+.button-1{
+    width: 15%;
+}
+button:hover{
+    background-color: rgb(124, 124, 123);
+}
+.section-2-header{
+    font-size: 45px;
+    text-align: center;
+}
+.col-12{
+    text-align: center;
+
+}
+.learn-more{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(25, 78, 43);
+    padding: 10px;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+}
+.learn-more:hover{
+    background-color: rgb(46, 146, 57);
+}
+.learn-more a{
+    color: white;
+    text-decoration: none;
+}
+.img{
+    margin-top: 4%;
+}
+footer{
+    background-color: #4e4d4d;
+}
+.footer h1{
+    text-align: center;
+    color: rgb(212, 210, 210);
+}
+.footer ul li{
+    margin-left:38%;
+    list-style-type: none;
+    color: #cac8c8;
+    font-size: large;
+}
+
+    
+/* Adding dropdown to our navbar (MOBILE RESPONSIVE) */
+@media screen and (max-width: 700px) {
+    nav ul li:not(:first-child) {
+        display: none;
+    }
+
+nav ul li.dropdown {
+    display: block;
+}
+nav ul.topnav-left.responsive {
+    position: relative;
+}
+nav ul.topnav-left.responsive li {
+    display: inline;
+    float: none;
+}
+nav ul.topnav-left.responsive li a {
+    display: block;
+    text-align: left;
+}
+div .col-6, .col-4 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+div .box{
+    margin: 2%;
+    padding: 2%;
+}
+.videocontainer iframe{
+    width: 100%;
+    position: relative;;
+    margin: 0px;
+}
+}
